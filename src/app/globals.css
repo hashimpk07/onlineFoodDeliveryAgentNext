@@ -1,0 +1,309 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Theme preset styles: these override CSS variables based on the selected data-theme-preset */
+@import "../styles/presets/brutalist.css";
+@import "../styles/presets/soft-pop.css";
+@import "../styles/presets/tangerine.css";
+@import "../styles/presets/bloom.css";
+@import "../styles/presets/retro.css";
+@import "../styles/presets/sunset-navy.css";
+
+/* Global UI font: maps the selected [data-font-family] onto the app-wide
+   --app-font-sans variable, which body's font-family reads (see @layer
+   base below). The next/font CSS variables (--font-geist, --font-inter, ...)
+   are all loaded up front in app/[locale]/layout.tsx. */
+[data-font-family="geist"] {
+  --app-font-sans: var(--font-geist);
+}
+[data-font-family="inter"] {
+  --app-font-sans: var(--font-inter);
+}
+[data-font-family="noto-sans"] {
+  --app-font-sans: var(--font-noto-sans);
+}
+[data-font-family="nunito-sans"] {
+  --app-font-sans: var(--font-nunito-sans);
+}
+[data-font-family="figtree"] {
+  --app-font-sans: var(--font-figtree);
+}
+[data-font-family="roboto"] {
+  --app-font-sans: var(--font-roboto);
+}
+[data-font-family="raleway"] {
+  --app-font-sans: var(--font-raleway);
+}
+[data-font-family="dm-sans"] {
+  --app-font-sans: var(--font-dm-sans);
+}
+[data-font-family="public-sans"] {
+  --app-font-sans: var(--font-public-sans);
+}
+[data-font-family="outfit"] {
+  --app-font-sans: var(--font-outfit);
+}
+[data-font-family="geist-mono"] {
+  --app-font-sans: var(--font-geist-mono);
+}
+[data-font-family="geist-pixel-square"] {
+  --app-font-sans: var(--font-geist-pixel-square);
+}
+[data-font-family="jetbrains-mono"] {
+  --app-font-sans: var(--font-jetbrains-mono);
+}
+[data-font-family="noto-serif"] {
+  --app-font-sans: var(--font-noto-serif);
+}
+[data-font-family="roboto-slab"] {
+  --app-font-sans: var(--font-roboto-slab);
+}
+[data-font-family="merriweather"] {
+  --app-font-sans: var(--font-merriweather);
+}
+[data-font-family="lora"] {
+  --app-font-sans: var(--font-lora);
+}
+[data-font-family="playfair-display"] {
+  --app-font-sans: var(--font-playfair-display);
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+/* Default theme styles (used when no data-theme-preset is set or when 'default' is selected).
+These serve as the fallback; there is no separate default.css file. */
+:root {
+  --radius: 0.625rem;
+  --body-font-size: 14px;
+  --body-font-weight: 600;
+  --heading-font-weight: 700;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.3211 0 0);
+  --chart-2: oklch(0.4495 0 0);
+  --chart-3: oklch(0.5693 0 0);
+  --chart-4: oklch(0.683 0 0);
+  --chart-5: oklch(0.7921 0 0);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.205 0 0);
+  --border: oklch(1 0 0 / 20%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.9521 0 0);
+  --chart-2: oklch(0.8576 0 0);
+  --chart-3: oklch(0.7572 0 0);
+  --chart-4: oklch(0.6534 0 0);
+  --chart-5: oklch(0.5452 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 20%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    font-family: var(--app-font-sans, var(--font-sans));
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--heading-font-weight);
+  }
+  /* MapLibre/Mapbox Popup Overrides */
+  .maplibregl-popup-content,
+  .mapboxgl-popup-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  .maplibregl-popup-tip,
+  .mapboxgl-popup-tip {
+    display: none !important;
+  }
+}
+
+@layer utilities {
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-2xs {
+    box-shadow: var(--shadow-2xs);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-xs {
+    box-shadow: var(--shadow-xs);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-sm {
+    box-shadow: var(--shadow-sm);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow {
+    box-shadow: var(--shadow);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-md {
+    box-shadow: var(--shadow-md);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-xl {
+    box-shadow: var(--shadow-xl);
+  }
+
+  [data-theme-preset]:not([data-theme-preset="default"]) .shadow-2xl {
+    box-shadow: var(--shadow-2xl);
+  }
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+.disable-transitions * {
+  transition: none !important;
+}
+
+@keyframes border-blink {
+  0%,
+  100% {
+    border-left-color: var(--destructive);
+  }
+  50% {
+    border-left-color: transparent;
+  }
+}
+
+.animate-blink-slow {
+  animation: border-blink 1.5s infinite;
+}
+
+.animate-blink-medium {
+  animation: border-blink 0.8s infinite;
+}
+
+.animate-blink-fast {
+  animation: border-blink 0.4s infinite;
+}
+
+/* Dashboard chrome (sidebar + top header) should never appear in printed
+   output, regardless of which page triggers window.print(). */
+@media print {
+  [data-slot="sidebar"],
+  [data-slot="sidebar-rail"],
+  [data-slot="sidebar-inset"] > header {
+    display: none !important;
+  }
+
+  [data-slot="sidebar-inset"] {
+    margin: 0 !important;
+  }
+
+  /* Chrome/Edge render their "headers and footers" (page title, URL, date,
+     page number) inside the page margin box — zeroing it out here removes
+     that browser-injected chrome so only the page content prints. */
+  @page {
+    margin: 0;
+  }
+}
