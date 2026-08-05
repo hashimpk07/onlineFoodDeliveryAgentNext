@@ -1,0 +1,198 @@
+{
+  "welcome": "Welcome to our application",
+  "home": "Home",
+  "settings": "Settings",
+  "sidebar": {
+    "home": {
+      "label": "Home",
+      "home": "Home"
+    },
+    "dashboards": {
+      "label": "Dashboards",
+      "dashboard": "Dashboard",
+      "overall": "Overall",
+      "clients": "Clients",
+      "management": "Management",
+      "operational_performance": "Operational Performance",
+      "sales": "Sales"
+    },
+    "orders": {
+      "label": "Orders",
+      "dispatcher": "Dispatcher",
+      "dispatcher_live": "Dispatcher Live",
+      "scheduled_orders": "Scheduled Orders",
+      "live_stream_map": "Live Stream Map",
+      "live_stream_map_beta": "Live Stream Map (Beta)",
+      "consolidated_orders": "Consolidated Orders"
+    },
+    "complaints": {
+      "label": "Complaints",
+      "tickets": "Tickets",
+      "pending_orders": "Pending Orders",
+      "ticket_report": "Ticket Report"
+    },
+    "captain_reports": {
+      "label": "Captain Reports",
+      "delivery_report": "Delivery Report",
+      "commission_report": "Commission Report",
+      "commission_payments": "Commission Payments",
+      "kpi_report": "KPI Report",
+      "consolidated_commission_report": "Consolidated Commission Report",
+      "active_low_performance_report": "Active Low Performance Report",
+      "shift_report": "Shift Report",
+      "salary_payments": "Salary Payments"
+    },
+    "client_reports": {
+      "label": "Client Reports",
+      "sales_report": "Sales Report",
+      "cancellation_report": "Cancellation Report",
+      "client_level_report": "Client Level Report",
+      "client_sales_report": "Client Sales Report",
+      "client_order": "Client Order",
+      "client_transactions": "Client Transactions",
+      "branch_performance": "Branch Performance"
+    },
+    "3pl_reports": {
+      "label": "3PL Reports",
+      "com_report": "Com. Reports",
+      "captain_com_report": "Captain Com Report"
+    },
+    "kpi_reports": {
+      "label": "KPI Reports",
+      "captain_performance": "Captain Performance",
+      "captain_working_days": "Captain Working Days",
+      "order_timeline": "Order TimeLine",
+      "high_level": "High Level",
+      "driver_level": "Driver Level",
+      "vendor_level": "Vendor Level",
+      "geographical_level": "Geographical Level",
+      "region_based": "Region Based",
+      "area_based": "Area Based",
+      "zone_based": "Zone Based",
+      "zone_detailed": "Zone Detailed"
+    },
+    "reports": {
+      "label": "Reports",
+      "expense_report": "Expense Report",
+      "captain_transactions": "Captain Transactions"
+    },
+    "vehicle": {
+      "label": "Vehicle",
+      "all_vehicle": "All Vehicle",
+      "rented_vehicles": "Rented Vehicles"
+    },
+    "employees": {
+      "label": "Employees",
+      "captains": "Captains",
+      "employees": "Employees",
+      "reg_requests": "Reg Requests",
+      "operations": "Operations"
+    },
+    "operation_reports": {
+      "label": "Operation Reports",
+      "daily_shift_reports": "Daily Shift Reports",
+      "timesheet_reports": "TimeSheet Reports"
+    },
+    "crm": {
+      "label": "CRM",
+      "notifications": "Notifications"
+    },
+    "sales_management": {
+      "label": "Sales Management",
+      "roles": "Roles",
+      "team_management": "Team Management",
+      "sales_leads": "Sales Leads",
+      "clients": "Clients"
+    },
+    "map_views": {
+      "label": "Map Views",
+      "store_view": "Store View",
+      "order_view": "Order View",
+      "store_order_view": "Store Order View"
+    },
+    "delivery_rules": {
+      "label": "Delivery Rules",
+      "price_rule_master": "Price Rule Master",
+      "cancellation_charge": "Cancellation Charge",
+      "return_to_client_charge": "Return To Client Charge"
+    },
+    "system_settings": {
+      "label": "System Settings",
+      "shift_rules": "Shift Rules",
+      "dispatch_rules": "Dispatch Rules",
+      "commission_rules": "Commission Rules",
+      "role_and_permission": "Role and Permission",
+      "vat_master": "Vat Master",
+      "industry_types": "Industry Types",
+      "api_token": "Api Token"
+    },
+    "geo_settings": {
+      "label": "Geo Settings",
+      "regions": "Regions",
+      "areas": "Areas",
+      "tires": "Tires",
+      "zones": "Zones",
+      "vat_master": "Vat Master",
+      "industry_types": "Industry Types",
+      "api_token": "Api Token"
+    },
+    "logs_and_expires": {
+      "label": "Logs & Expires",
+      "logs": "Logs ",
+      "expires": "Expires"
+    },
+    "general": {
+      "label": "General",
+      "dashboard": "Dashboard",
+      "company_info": "Company Info",
+      "accounts": "Accounts",
+      "partner": "Partner",
+      "asset": "Asset",
+      "logs": {
+        "accounts": "Accounts",
+        "captains_commission": "Captain Commission",
+        "company_earning": "Company Earnings",
+        "reconciliation": "Reconciliations"
+      },
+      "3pl_commission_reports": "3PL Commission Reports"
+    },
+    "sales_and_operations": {
+      "label": "Sales And Operations",
+      "active_clients_map": "Active Clients Map",
+      "potential_client": "Potential Client",
+      "client_scrapper": "Client Scrapper"
+    },
+    "client_home": {
+      "label": "Home",
+      "dashboard": "Dashboard",
+      "orders": "Orders",
+      "sales_report": "Sales Report",
+      "transactions": "Transactions",
+      "config_access": "Configuration Access",
+      "order_report": "Order Report"
+    },
+    "third_party": {
+      "label": "Home",
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "orders": "Orders",
+      "employees": "Employees",
+      "captain": "Captains",
+      "vehicle": "Vehicles",
+      "reports": "KPL Reports",
+      "com_reports": "Com. Reports",
+      "accounts": {
+        "accounts": "Accounts",
+        "captains_commission": "Captain Commission",
+        "company_earning": "Company Earnings",
+        "reconciliation": "Reconciliations"
+      }
+    }
+  },
+  "home_page": {
+    "welcome_title": "Welcome to",
+    "welcome_brand": "Leajlak",
+    "welcome_description": "Leajlak is a modern delivery management platform for businesses to assign, track, and optimize orders in real time. Improve delivery speed, reduce operational overhead, and manage captains effortlessly.",
+    "contact_us": "Contact Us"
+  }
+}

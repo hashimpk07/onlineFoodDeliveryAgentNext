@@ -1,0 +1,179 @@
+{
+  "welcome": "[AR] Welcome to our application",
+  "home": "[AR] Home",
+  "settings": "[AR] Settings",
+  "sidebar": {
+    "home": {
+      "label": "[AR] Home",
+      "home": "[AR] Home"
+    },
+    "dashboards": {
+      "label": "[AR] Dashboards",
+      "dashboard": "[AR] Dashboard",
+      "overall": "[AR] Overall",
+      "clients": "[AR] Clients",
+      "management": "[AR] Management",
+      "operational_performance": "[AR] Operational Performance",
+      "sales": "[AR] Sales"
+    },
+    "orders": {
+      "label": "[AR] Orders",
+      "dispatcher": "[AR] Dispatcher",
+      "dispatcher_live": "[AR] Dispatcher Live",
+      "scheduled_orders": "[AR] Scheduled Orders",
+      "live_stream_map": "[AR] Live Stream Map",
+      "live_stream_map_beta": "[AR] Live Stream Map (Beta)",
+      "consolidated_orders": "[AR] Consolidated Orders"
+    },
+    "complaints": {
+      "label": "[AR] Complaints",
+      "tickets": "[AR] Tickets",
+      "pending_orders": "[AR] Pending Orders",
+      "ticket_report": "[AR] Ticket Report"
+    },
+    "captain_reports": {
+      "label": "[AR] Captain Reports",
+      "delivery_report": "[AR] Delivery Report",
+      "commission_report": "[AR] Commission Report",
+      "commission_payments": "[AR] Commission Payments",
+      "kpi_report": "[AR] KPI Report",
+      "consolidated_commission_report": "[AR] Consolidated Commission Report",
+      "active_low_performance_report": "[AR] Active Low Performance Report",
+      "shift_report": "[AR] Shift Report",
+      "salary_payments": "[AR] Salary Payments"
+    },
+    "client_reports": {
+      "label": "[AR] Client Reports",
+      "sales_report": "[AR] Sales Report",
+      "cancellation_report": "[AR] Cancellation Report",
+      "client_level_report": "[AR] Client Level Report",
+      "client_sales_report": "[AR] Client Sales Report",
+      "client_order": "[AR] Client Order",
+      "client_transactions": "[AR] Client Transactions",
+      "branch_performance": "[AR] Branch Performance"
+    },
+    "3pl_reports": {
+      "label": "[AR] 3pl Reports",
+      "com_report": "[AR] COM Report",
+      "captain_com_report": "[AR] Captain Com Report"
+    },
+    "kpi_reports": {
+      "label": "[AR] KPI Reports",
+      "captain_performance": "[AR] Captain Performance",
+      "captain_working_days": "[AR] Captain Working Days",
+      "order_timeline": "[AR] Order TimeLine",
+      "high_level": "[AR] High Level",
+      "driver_level": "[AR] Driver Level",
+      "vendor_level": "[AR] Vendor Level",
+      "geographical_level": "[AR] Geographical Level",
+      "region_based": "[AR] Region Based",
+      "area_based": "[AR] Area Based",
+      "zone_based": "[AR] Zone Based",
+      "zone_detailed": "[AR] Zone Detailed"
+    },
+    "reports": {
+      "label": "[AR] Reports",
+      "expense_report": "[AR] Expense Report",
+      "captain_transactions": "[AR] Captain Transactions"
+    },
+    "vehicle": {
+      "label": "[AR] Vehicle",
+      "all_vehicle": "[AR] All Vehicle",
+      "rented_vehicles": "[AR] Rented Vehicles"
+    },
+    "employees": {
+      "label": "[AR] Employees",
+      "captains": "[AR] Captains",
+      "employees": "[AR] Employees",
+      "reg_requests": "[AR] Reg Requests",
+      "operations": "[AR] Operations"
+    },
+    "operation_reports": {
+      "label": "[AR] Operation Reports",
+      "daily_shift_reports": "[AR] Daily Shift Reports",
+      "timesheet_reports": "[AR] TimeSheet Reports"
+    },
+    "crm": {
+      "label": "[AR] CRM",
+      "notifications": "[AR] Notifications"
+    },
+    "sales_management": {
+      "label": "[AR] Sales Management",
+      "roles": "[AR] Roles",
+      "team_management": "[AR] Team Management",
+      "sales_leads": "[AR] Sales Leads",
+      "clients": "[AR] Clients"
+    },
+    "map_views": {
+      "label": "[AR] Map Views",
+      "store_view": "[AR] Store View",
+      "order_view": "[AR] Order View",
+      "store_order_view": "[AR] Store Order View"
+    },
+    "delivery_rules": {
+      "label": "[AR] Delivery Rules",
+      "price_rule_master": "[AR] Price Rule Master",
+      "cancellation_charge": "[AR] Cancellation Charge",
+      "return_to_client_charge": "[AR] Return To Client Charge"
+    },
+    "system_settings": {
+      "label": "[AR] System Settings",
+      "shift_rules": "[AR] Shift Rules",
+      "dispatch_rules": "[AR] Dispatch Rules",
+      "commission_rules": "[AR] Commission Rules",
+      "role_and_permission": "[AR] Role and Permission",
+      "vat_master": "[AR] Vat Master",
+      "industry_types": "[AR] Industry Types",
+      "api_token": "[AR] Api Token"
+    },
+    "geo_settings": {
+      "label": "[AR] Geo Settings",
+      "regions": "[AR] Regions",
+      "areas": "[AR] Areas",
+      "tires": "[AR] Tires",
+      "zones": "[AR] Zones",
+      "vat_master": "[AR] Vat Master",
+      "industry_types": "[AR] Industry Types",
+      "api_token": "[AR] Api Token"
+    },
+    "logs_and_expires": {
+      "label": "[AR] Logs & Expires",
+      "logs": "[AR] Logs",
+      "expires": "[AR] Expires"
+    },
+    "general": {
+      "label": "[AR] General",
+      "dashboard": "[AR] Dashboard",
+      "company_info": "[AR] Company Info",
+      "accounts": "[AR] Accounts",
+      "partner": "[AR] Partner",
+      "asset": "[AR] Asset",
+      "3pl_commission_reports": "[AR] 3PL Commission Reports"
+    },
+    "sales_and_operations": {
+      "label": "[AR] Sales And Operations",
+      "active_clients_map": "[AR] Active Clients Map",
+      "potential_client": "[AR] Potential Client",
+      "client_scrapper": "[AR] Client Scrapper"
+    },
+    "client_home": {
+      "label": "[AR] Home",
+      "dashboard": "[AR] Dashboard",
+      "orders": "[AR] Orders",
+      "sales_report": "[AR] Sales Report",
+      "transactions": "[AR] Transactions",
+      "config_access": "[AR] Config Access",
+      "order_report": "[AR] Order Report"
+    },
+    "third_party_home": {
+      "label": "[AR] Home",
+      "third_party_home": "[AR] Third Party Home"
+    }
+  },
+  "home_page": {
+    "welcome_title": "مرحباً بكم في",
+    "welcome_brand": "ليجلاك",
+    "welcome_description": "ليجلاك هي منصة حديثة لإدارة التوصيل للشركات لتعيين وتتبع وتحسين الطلبات في الوقت الفعلي. قم بتحسين سرعة التوصيل وتقليل التكاليف التشغيلية وإدارة المناديب بسهولة.",
+    "contact_us": "اتصل بنا"
+  }
+}
